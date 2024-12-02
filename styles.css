@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background: linear-gradient(135deg, #35424a 0%, #e8491d 100%);
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header h2 {
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+
+nav {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #e8491d;
+    color: #ffffff;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+
+
+section {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section > img {
+
+        height: 100px;
+        width: 100px;
+    }
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section h3 {
+    border-bottom: 3px solid #e8491d;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #35424a;
+}
+
+h3 {
+    color: #35424a;
+    border-bottom: 2px solid #e8491d;
+    padding-bottom: 10px;
+}
+
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+
+#kontak p {
+    margin: 5px 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+}
